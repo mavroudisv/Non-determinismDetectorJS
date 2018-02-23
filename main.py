@@ -1,3 +1,6 @@
+#Author: Vasilios Mavroudis, 2014
+
+
 import time
 import csv
 import os

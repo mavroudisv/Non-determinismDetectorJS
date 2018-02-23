@@ -1,3 +1,6 @@
+/*
+ * @author Vasilios Mavroudis, 2014
+ */
 
 /*Objects*/
 var functionLogger = {};

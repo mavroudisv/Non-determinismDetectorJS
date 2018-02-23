@@ -1,3 +1,7 @@
+/*
+ * @author Vasilios Mavroudis, 2014
+ */
+
 /*Locking stuff*/
 var arr_locked_calls = [];
 
