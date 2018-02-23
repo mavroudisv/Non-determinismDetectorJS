@@ -1,10 +1,19 @@
 # Info
-This project is a PoC on the detection of non-deterministic behaviour in JS.
+This is a prototype that analyses JavaScript malware samples and detects those that
+exhibit non-deterministic behavior in order to evade detection. The most interesting part of it are the two js scripts that lock and log native js functions (see 'scripts' directory). We focused on functions that can be used as sources of randomness but any function can be locked. 
+
+I developed it during my summer internship in 2014 at UCSB Seclab working with Alex Kapravelos, Luca Invernizzi, Giovanni Vigna and Chris Kruegel.
+
+
 
 
 # Installation
+* Python 2.7 (If interested in porting it into Python3 let me know!)
+* Firefox
+* Selenium
 
-No installation is needed. Just install the missing python modules and you are done.
+
+ 
    
 # Usage
 
@@ -31,7 +40,6 @@ The main.py works as follows:
 
 4. The requests are compared with the ones captured on step 1. If they are not exactly the same, the non-locked function causes non-deterministic execution.
 
-See also schema.png
 
 
 # Known Shortcomings/Improvements
@@ -39,6 +47,3 @@ See also schema.png
 + This approach cannot reliably detect all cases where randomness is "fetched" from external sources.
 
 + Build execution tree based on the call log. Useful for visual inspection of the malware.
-
-# License
-WTFPL (WTFPL.net)
